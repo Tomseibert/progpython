@@ -41,8 +41,19 @@ def p142readfile():
     print (file.read(1))
     print (file.read(8))
 
+def p143iterators():
+    print ('p143iterators')
+    print ('basic for loop')
+    for line in open('data.txt'):
+        print (line, end = '')
+    print ('Other ways')
+    print (open('data.txt').readlines())   # get a list
+    print (list(open('data.txt')))  # force a list
+
+
 if __name__ == "__main__":
     p138newfile()
     p140newfile()
     p141openfile()
     p142readfile()
+    p143iterators()
